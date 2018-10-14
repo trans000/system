@@ -118,7 +118,7 @@ while True:
         counter+=1
         
         if counter > 2:
-        #if counter > 2*60:
+        #if counter > 2*60*18:
             orders = bitmex.fetch_open_orders()
             for o in orders:
                 if o['symbol'] == 'BTC/JPY' and o['type'] == 'stop':
